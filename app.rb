@@ -29,13 +29,13 @@ class App < Sinatra::Base
     @number1 = params[:number1].to_i
     @number2 = params[:number2].to_i
     if params[:operation] == "add"
-      (@num1 + @num2).to_s
+      (@number1 + @number2).to_s
     elsif params[:operation] == "subtract"
-      (@num1 - @num2).to_s
+      (@number1 - @number2).to_s
     elsif params[:operation] == "multiply"
-      (@num1 * @num2).to_s
+      (@number1 * @number2).to_s
     elsif params[:operation] == "divide"
-      (@num1 / @num2).to_s
+      (@number1 / @number2).to_s
     else
       "Unable to perform this operation"
     end
